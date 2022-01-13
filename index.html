@@ -1,0 +1,131 @@
+ <!DOCTYPE HTML>
+<html>
+<head>
+    
+<meta charset="utf8"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<boby onload="initialize()">
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="apple-mobile-web-app-title" content="OSM Sample"/>
+  <title>usagi123</title>
+  <activity android:name=".MainActivity">
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+        <data android:scheme="com.hoge.testapp" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+    </intent-filter>
+</activity>
+<script>
+      //. 初期中心位置
+var lat = 34.77055321345641;
+var lng = 138.01483687665527;
+
+//. 初期ズームレベル
+var zoomlevel = 12;
+var map = null;
+$(function(){;{
+  //. 初期位置を中心とした地図を OpenStreetMap データで表示
+  map = L.map('demoMap', { dragging: true, zoomControl: false }).setView( [ lat, lng ], zoomlevel );
+  L.control.zoom( { position: 'bottomright' } ).addTo( map );
+  L.tileLayer(
+    'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: 'Map data © <a href="//openstreetmap.org/">OpenStreetMap</a>',
+    }).addTo( map );
+    var popup = L.popup();
+    //.マーカー
+    L.marker([34.76930921345641,138.01483687665527]).addTo(map)
+    .on('click', function (e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent("探したいジャンルを選んでね。".fontsize(4).bold().fontcolor(""))
+      .openOn(map);
+      });
+     
+}})
+ 
+</script>
+<div class="usagi123"style="display:flex;">
+   
+        <button type="reset" id="resutoran">
+        <img src="resutoran.jpg" alt="button" style="width:100px;height:100px;">
+        </button>
+        <button type="reset" id="cafe">
+        <img src="cafe.jpg" alt="button" style="width:100px;height:100px;">
+        </button> 
+        <button type="reset" id="fish">
+        <img src="fish.jpg" alt="button" style="width:100px;height:100px;">
+        </button> 
+        <button type="reset" id="niku">
+        <img src="niku.jpg" alt="button" style="width:100px;height:100px;">
+        </button>
+         <button type="reset" id="soba">
+        <img src="soba.jpg" alt="button" style="width:100px;height:100px;">
+        </button>
+         <button type="reset" id="ramen">
+        <img src="ramen.jpg" alt="button" style="width:100px;height:100px;">
+        </button>
+         <button type="reset" id="shumai">
+        <img src="shumai.jpg" alt="button" style="width:100px;height:100px;">
+        </button>
+         <button type="reset" id="sushi">
+        <img src="sushi.jpg" alt="button" style="width:100px;height:100px;">
+        </button>
+         <button type="reset" id="sonota">
+        <img src="sonota.jpg" alt="button" style="width:100px;height:100px;">
+        </button> 
+            
+</div>
+
+
+<style>
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+#demoMap{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+#message{
+  position: absolute;
+  top: 10px;
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+}
+</style>
+
+
+  <div>
+    <div id="demoMap"></div>
+  </div>
+  
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+ 
+  
+  <script src="js/leaflet.sprite.js"></script>
+  <script src="js/resutoran.js"></script>
+  <script src="js/cafe.js"></script>
+  <script src="js/sonota.js"></script>
+  <script src="js/sushi.js"></script>
+  <script src="js/sonota2.js"></script>
+</body>
+ 
+</html>  
+

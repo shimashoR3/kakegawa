@@ -1,0 +1,41 @@
+ <link rel="stylesheet" href="//unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+<script src="//unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+  <script src="js/map_display.js"></script>
+  <script src="js/nihukura.js"></script>
+</body>
+
+</html> 
+
+//.カフェ
+document.getElementById("cafe").onclick = function(){
+      if (map && addMarker) {
+        map.removeLayer(addMarker);
+        addMarker = null;
+    }
+          var popup = L.popup();
+ addMarker = L.marker([34.78124404234647, 138.01317869983708]).addTo(map).on('click', function (e) {
+    popup
+      .setLatLng(e.latlng)
+      .setContent("aaa".fontcolor(""))
+      .openOn(map);
+      });
+ }
+
+ //.マーカー削除
+ function deleteMakers(idx=null) {
+		if(idx == null){
+			//生成済マーカーを順次すべて削除する
+			for (var i = 0; i < markers.length; i++) {
+					markers[i].setMap(null);
+			}
+参照 http://gmap.pw/api_v3/maker_hide/all/#i-4
+
+
+"<a href=#https://kimikura.co.jp/>https://kimikura.co.jp/</a>"
+
+
+・発表　1グループ　６分３０秒～７分
+・SDGsについてはあまり説明しなくてよい
+

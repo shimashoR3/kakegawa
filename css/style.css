@@ -1,0 +1,132 @@
+
+.title{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    /* 重なり順を指定*/
+    z-index: 1;
+}
+body {
+    padding: 0;
+    margin: 0;
+  position: relative;
+}
+.usagi123 {
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+.item {
+      /* 横スクロール用 */
+      display: inline-block;
+      width: 90%;
+
+     
+      height: 220px;
+      width: 220px
+     
+    }
+html, body, #map {
+  height: 100%;
+}
+#resutoran{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#cafe{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#fish{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#niku{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#soba{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#ramen{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#shumai{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#sushi{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#sonota{
+  width: 100px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
